@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="images/logo.svg" alt="23andfour Logo" class="logo">
+            <!-- Navigation starts -->
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li>
+                        <img src="images/exit.svg" alt="exit menu" id="exit" class="exit-btn hide-desktop">
+                    </li>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <img src="images/server.svg" alt="server graphic" class="server">
+
+            <h1>Web Hosting for modern era</h1>
+            <p class="sub-head">Go serverless and pay for what you use.</p>
+
+            <img src="images/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
+        </section>
+    </div>
+
+    <div class="blue-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/icon-1.svg" alt="calender icon">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                </li>
+                <li>
+                    <img src="images/icon-2.svg" alt="calender icon">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                </li>
+                <li>
+                    <img src="images/icon-3.svg" alt="calender icon">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="grey-container">
+        <div class="container">
+            <ul>
+                <figure>
+                    <li><img src="images/user1.png" alt="user testimonial">
+                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</blockquote>
+                        <figcaption>- John Doe</figcaption>
+                    </li>
+                </figure>
+                <figure>
+                    <li><img src="images/user2.png" alt="user testimonial">
+                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</blockquote>
+                        <figcaption>- John Doe</figcaption>
+                    </li>
+                </figure>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>
+            Start your free trial
+        </h2>
+        <a href="#" class="cta">Get started</a>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#" alt="logo" class="logo">
+                    <p class="address">Melrose Place, 90812 <br>USA</p>
+                </a>
+                <ul class="footer-links">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Poilcy</a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var menu = document.getElementById('menu');
+        var exit = document.getElementById('exit');
+        var nav = document.getElementById('nav');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+    </script>
+</body>
+
+</html>
